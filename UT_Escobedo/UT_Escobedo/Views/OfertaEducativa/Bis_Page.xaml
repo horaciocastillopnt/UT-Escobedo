@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UT_Escobedo.Views.Oferta_Educativa.Bis_Page"
+             Title="Bis">
+    
+    <ContentPage.Content>
+
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="EndAndExpand">
+
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+                <Grid x:Name="Grid">
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+
+                        <Label Text="Cuatrimestre 0 Introduccion a la Lengua Inglesa" TextColor="Black" FontSize="18"
+                               FontAttributes="Bold" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" VerticalOptions="Center">
+
+                        <Label x:Name="PrimeraLista" Text="Primer Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2">
+
+                        <ListView x:Name="PrimerCuatri" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black" RowHeight="50">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="Center">
+
+                                                <Label Text="{Binding PMateria}" TextColor="Black" FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" VerticalOptions="Center">
+
+                        <Label x:Name="SegundaLista" Text="Segundo Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="4">
+
+                        <ListView x:Name="SegundoCuatri" BackgroundColor="White" HasUnevenRows="True" SeparatorColor="Black"
+                                  SeparatorVisibility="Default">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="Center">
+
+                                                <Label Text="{Binding SMateria}" TextColor="Black" FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="5" VerticalOptions="Center">
+
+                        <Label x:Name="TerceraLista" Text="Tercer Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="6">
+
+                        <ListView x:Name="TercerCuatri" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="Center">
+
+                                                <Label Text="{Binding TMateria}" TextColor="Black" FontSize="16" 
+                                                       VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"
+                                                       HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="7" VerticalOptions="Center">
+
+                        <Label x:Name="CuartaLista" Text="Cuarto Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="8">
+
+                        <ListView x:Name="CuartoCuatri" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout>
+
+                                                <Label Text="{Binding CMateria}" TextColor="Black" FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="9" VerticalOptions="Center">
+
+                        <Label x:Name="QuintaLista" Text="Quinto Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="10">
+
+                        <ListView x:Name="QuintoCuatri" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="CenterAndExpand">
+
+                                                <Label Text="{Binding QMateria}" TextColor="Black"
+                                                       FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="11" VerticalOptions="Center">
+
+                        <Label x:Name="SextaLista" Text="Sexto Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="12">
+
+                        <ListView x:Name="SextoCuatri" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout>
+
+                                                <Label Text="{Binding SxMateria}" TextColor="Black"
+                                                   FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+    
+</ContentPage>

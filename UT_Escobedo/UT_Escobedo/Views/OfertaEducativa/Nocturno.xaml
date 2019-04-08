@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UT_Escobedo.Views.Oferta_Educativa.Nocturno"
+             Title="Nocturno">
+
+    <ContentPage.Content>
+
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="EndAndExpand">
+
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+                <StackLayout x:Name="NOC" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" IsEnabled="False" IsVisible="False">
+
+                    <Label Text="Esta carrera no tiene modalidad Nocturna" TextDecorations="Underline" TextColor="Black"
+                   FontAttributes="Bold" FontSize="35" VerticalOptions="Center" HorizontalOptions="Center"
+                   VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                </StackLayout>
+
+                <Grid x:Name="Grid">
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="250"/>
+
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0" VerticalOptions="Center">
+
+                        <Label x:Name="PrimeraLista" Text="Primer Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1">
+
+                        <ListView x:Name="NocturnoPrimero" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black" RowHeight="50">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="Center">
+
+                                                <Label Text="{Binding PMateria}" TextColor="Black" FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" VerticalOptions="Center">
+
+                        <Label x:Name="SegundaLista" Text="Segundo Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3">
+
+                        <ListView x:Name="NocturnoSegundo" BackgroundColor="White" HasUnevenRows="True" SeparatorColor="Black"
+                                  SeparatorVisibility="Default">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="Center">
+
+                                                <Label Text="{Binding SMateria}" TextColor="Black" FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="4" VerticalOptions="Center">
+
+                        <Label x:Name="TerceraLista" Text="Tercer Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="5">
+
+                        <ListView x:Name="NocturnoTercero" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="Center">
+
+                                                <Label Text="{Binding TMateria}" TextColor="Black" FontSize="16" 
+                                                       VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"
+                                                       HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="6" VerticalOptions="Center">
+
+                        <Label x:Name="CuartaLista" Text="Cuarto Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="7">
+
+                        <ListView x:Name="NocturnoCuarto" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout>
+
+                                                <Label Text="{Binding CMateria}" TextColor="Black" FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="8" VerticalOptions="Center">
+
+                        <Label x:Name="QuintaLista" Text="Quinto Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="9">
+
+                        <ListView x:Name="NocturnoQuinto" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout VerticalOptions="CenterAndExpand">
+
+                                                <Label Text="{Binding QMateria}" TextColor="Black"
+                                                       FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="10" VerticalOptions="Center">
+
+                        <Label x:Name="SextaLista" Text="Sexto Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="11">
+
+                        <ListView x:Name="NocturnoSexto" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <StackLayout>
+
+                                                <Label Text="{Binding SxMateria}" TextColor="Black"
+                                                   FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                            </StackLayout>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="12" VerticalOptions="Center">
+
+                        <Label x:Name="SeptimaLista" Text="Septimo Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="13">
+
+                        <ListView x:Name="NocturnoSeptimo" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <Label Text="{Binding SepMateria}" TextColor="Black"
+                                                   FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="14" VerticalOptions="Center">
+
+                        <Label x:Name="OctvaLista" Text="Octavo Cuatrimestre" TextColor="Black"
+                               FontSize="18" FontAttributes="Bold" LineBreakMode="NoWrap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="15">
+
+                        <ListView x:Name="NocturnoOctavo" BackgroundColor="White" HasUnevenRows="True" SeparatorVisibility="Default"
+                                  SeparatorColor="Black">
+
+                            <ListView.ItemTemplate>
+
+                                <DataTemplate>
+
+                                    <ViewCell>
+
+                                        <ViewCell.View>
+
+                                            <Label Text="{Binding OcMateria}" TextColor="Black"
+                                                   FontSize="16" VerticalOptions="Center"
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                                        </ViewCell.View>
+
+                                    </ViewCell>
+
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>

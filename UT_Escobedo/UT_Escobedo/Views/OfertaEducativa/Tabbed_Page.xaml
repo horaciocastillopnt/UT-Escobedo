@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:UT_Escobedo.Views.Oferta_Educativa"
+            x:Class="UT_Escobedo.Views.Oferta_Educativa.Tabbed_Page"
+            Title="Plan de Estudios">
+
+
+    <local:TsuQuimica/>
+
+    <local:Bis_Page/>
+
+    <local:Nocturno/>
+
+</TabbedPage>

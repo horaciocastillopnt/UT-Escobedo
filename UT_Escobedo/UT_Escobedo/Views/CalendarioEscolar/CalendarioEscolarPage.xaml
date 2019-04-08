@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UT_Escobedo.Views.CalendarioEscolar.CalendarioEscolarPage"
+             Title="Calendario Escolar">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Picker x:Name="pickerPrueba" Title="Selecciona un mes..." ItemDisplayBinding="{Binding MonthName}" SelectedIndexChanged="PickerPrueba_SelectedIndexChanged"/>
+
+            <ListView x:Name="eventsList" HasUnevenRows="True">
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <ContentView Content="{Binding Content}" VerticalOptions="CenterAndExpand" Padding="5"/>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

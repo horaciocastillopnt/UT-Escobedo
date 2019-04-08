@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UT_Escobedo"
+             x:Class="UT_Escobedo.Views.Transporte.GEMA.GemaConcordia_Page"
+             Title="Apodaca Concordia">
+    <ContentPage.Content>
+
+        <local:PinchToZoomContainer>
+
+            <local:PinchToZoomContainer.Content>
+
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                    <Image Margin="10">
+
+                        <Image.Source>
+
+                            <UriImageSource Uri="https://i.imgur.com/BTccQtV.png"/>
+
+                        </Image.Source>
+
+                    </Image>
+
+                </StackLayout>
+
+            </local:PinchToZoomContainer.Content>
+
+        </local:PinchToZoomContainer>
+
+    </ContentPage.Content>
+</ContentPage>

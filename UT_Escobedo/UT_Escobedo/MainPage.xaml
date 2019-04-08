@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:UT_Escobedo"
+                  NavigationPage.HasNavigationBar="False"
+                  x:Class="UT_Escobedo.MainPage"
+                  Title="UT-Escobedo">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="White">
+
+            <ScrollView>
+
+                <StackLayout Orientation="Vertical">
+
+                    <ListView x:Name="navigationDrawerList" RowHeight="65" SeparatorVisibility="Default"
+                          ItemTapped="NavigationDrawerList_ItemTapped" BackgroundColor="White">
+
+                        <ListView.Header>
+
+
+                            <Grid HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand">
+
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="80"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="5"/>
+                                </Grid.RowDefinitions>
+
+                                <ImageButton x:Name="btnHome" Aspect="Fill" Grid.RowSpan="5" Grid.ColumnSpan="4"
+                                   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="100"
+                                       Clicked="BtnHome_Clicked" BackgroundColor="Transparent">
+
+                                    <ImageButton.Source>
+
+                                        <UriImageSource Uri="https://i.imgur.com/rBV2pDP.png"/>
+
+                                    </ImageButton.Source>
+
+                                </ImageButton>
+
+                            </Grid>
+
+                        </ListView.Header>
+
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate>
+
+                                <ViewCell>
+
+                                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal"
+                                         Padding="20,10,0,10" Spacing="20">
+
+                                        <Image Source="{Binding Icon}" WidthRequest="30" HeightRequest="30"/>
+
+                                        <Label Text="{Binding Title}" FontSize="Medium"  VerticalOptions="Center"  
+                                               TextColor="Black"/>
+
+                                    </StackLayout>
+
+                                </ViewCell>
+
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+
+                </StackLayout>
+
+            </ScrollView>
+
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage></NavigationPage>
+    </MasterDetailPage.Detail>
+
+
+</MasterDetailPage>

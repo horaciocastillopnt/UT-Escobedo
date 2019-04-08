@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UT_Escobedo.Views.Becas.BecasPage"
+             Title="BECAS">
+
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout>
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Margin="5" Grid.Row="0">
+
+                        <Frame>
+
+                            <Frame.OutlineColor>
+
+                                <OnPlatform x:TypeArguments="Color" Android="Gray" iOS="Gray"/>
+
+                            </Frame.OutlineColor>
+
+                            <Frame.Margin>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="7" iOS="7"/>
+
+                            </Frame.Margin>
+
+                            <Frame.Padding>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="5" iOS="5"/>
+
+                            </Frame.Padding>
+
+                            <StackLayout>
+
+                                <StackLayout Padding="15">
+
+                                    <Label Text="Beca Interna" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="10"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Label Text="Infromacion |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Requisitos |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Fechas" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <ImageButton x:Name="btnInformacion" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center" Clicked="BtnInformacion_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/vt60IOf.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnRequerimientos" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="End" Clicked="BtnRequerimientos_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/M02oAqm.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnFecha" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center" Clicked="BtnFecha_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/VFIdKZw.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                    <StackLayout Margin="5" Grid.Row="1">
+
+                        <Frame>
+
+                            <Frame.OutlineColor>
+
+                                <OnPlatform x:TypeArguments="Color" Android="Gray" iOS="Gray"/>
+
+                            </Frame.OutlineColor>
+
+                            <Frame.Margin>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="7" iOS="7"/>
+
+                            </Frame.Margin>
+
+                            <Frame.Padding>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="5" iOS="5"/>
+
+                            </Frame.Padding>
+
+                            <StackLayout>
+
+                                <StackLayout Padding="15">
+
+                                    <Label Text="Beca de Transporte" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="10"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Label Text="Infromacion |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Requisitos |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Fechas" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <ImageButton x:Name="btnInfTransporte" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center" 
+                                             Clicked="BtnInformacionBecaTransporte_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/vt60IOf.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnRequTransporte" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center" 
+                                             Clicked="BtnRequerimientosBecaTransporte_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/M02oAqm.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnFechaTransporte" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center" 
+                                             Clicked="BtnFechaBecaTransporte_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/VFIdKZw.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                    <StackLayout Margin="5" Grid.Row="2">
+
+                        <Frame>
+
+                            <Frame.OutlineColor>
+
+                                <OnPlatform x:TypeArguments="Color" Android="Gray" iOS="Gray"/>
+
+                            </Frame.OutlineColor>
+
+                            <Frame.Margin>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="7" iOS="7"/>
+
+                            </Frame.Margin>
+
+                            <Frame.Padding>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="5" iOS="5"/>
+
+                            </Frame.Padding>
+
+                            <StackLayout>
+
+                                <StackLayout Padding="15">
+
+                                    <Label Text="Beca Alimenticia" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="10"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Label Text="Infromacion |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Requisitos |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Fechas" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <ImageButton x:Name="btnInfAli" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center"
+                                             Clicked="BtnInformacionBecaAlimenticia_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/vt60IOf.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnRequAlimenticia" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center"
+                                             Clicked="BtnRequerimientosBecaAlimenticia_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/M02oAqm.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnFecaAli" Aspect="Fill" BackgroundColor="Transparent"
+                                             WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center"
+                                             Clicked="BtnFechaBecaAlimenticia_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/VFIdKZw.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                    <StackLayout Margin="5" Grid.Row="3">
+
+                        <Frame>
+
+                            <Frame.OutlineColor>
+
+                                <OnPlatform x:TypeArguments="Color" Android="Gray" iOS="Gray"/>
+
+                            </Frame.OutlineColor>
+
+                            <Frame.Margin>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="7" iOS="7"/>
+
+                            </Frame.Margin>
+
+                            <Frame.Padding>
+
+                                <OnPlatform x:TypeArguments="Thickness" Android="5" iOS="5"/>
+
+                            </Frame.Padding>
+
+                            <StackLayout>
+
+                                <StackLayout Padding="15">
+
+                                    <Label Text="Beca Deportiva" TextColor="Black" FontSize="25" FontAttributes="Bold" Margin="10"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Label Text="Infromacion |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Requisitos |" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                    <Label Text="Fechas" Margin="5" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <ImageButton x:Name="btnInfDepo" Aspect="Fill" BackgroundColor="Transparent"
+                                         WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center"
+                                         Clicked="BtnInformacionBecaDeportiva_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/vt60IOf.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnRequiDepo" Aspect="Fill" BackgroundColor="Transparent"
+                                         WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center"
+                                         Clicked="BtnRequerimientosBecaDeportiva_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/M02oAqm.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                    <ImageButton x:Name="btnFechaDepo" Aspect="Fill" BackgroundColor="Transparent"
+                                         WidthRequest="40" HeightRequest="40" Margin="15" VerticalOptions="Center"
+                                         Clicked="BtnFechaBecaDeportiva_Clicked">
+
+                                        <ImageButton.Source>
+
+                                            <UriImageSource Uri="https://i.imgur.com/VFIdKZw.png"/>
+
+                                        </ImageButton.Source>
+
+                                    </ImageButton>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>

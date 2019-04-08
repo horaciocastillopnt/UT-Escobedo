@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UT_Escobedo.Views.OfertaEducativa.Main">
+
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Button x:Name="btnTsuPage" Text="TSU" FontSize="30" FontAttributes="Bold" BackgroundColor="White"
+                    BorderWidth="2" BorderColor="Black" VerticalOptions="Center" Clicked="BtnTsuPage_Clicked"/>
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Button x:Name="btnIngPage" Text="Ingenieria" FontSize="30" FontAttributes="Bold" BackgroundColor="White"
+                    BorderWidth="2" BorderColor="Black" VerticalOptions="Center" Clicked="BtnIngPage_Clicked"/>
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

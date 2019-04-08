@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UT_Escobedo.HomePage"
+             Title="UT-Escobedo"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+
+        <Grid Padding="10">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="#007535">
+
+                <Image.Source>
+
+                    <UriImageSource Uri="https://i.imgur.com/gBCTz9C.png"/>
+
+                </Image.Source>
+
+            </Image>
+
+            <ImageButton x:Name="btnCalendario"
+                             Grid.Row="1" Grid.Column="0" BackgroundColor="#66BB6A" Clicked="BtnCalendario_Clicked">
+
+                <ImageButton.Source>
+
+                    <UriImageSource Uri="https://i.imgur.com/PurtbJh.png"/>
+
+                </ImageButton.Source>
+
+            </ImageButton>
+
+            <ImageButton x:Name="btnDirectorioEscolar" BackgroundColor="#43A047" 
+                             Grid.Row="2" Grid.Column="0" Clicked="BtnDirectorioEscolar_Clicked">
+
+                <ImageButton.Source>
+
+                    <UriImageSource Uri="https://i.imgur.com/GpevO2x.png"/>
+
+                </ImageButton.Source>
+
+            </ImageButton>
+
+            <ImageButton x:Name="btnBecas" BackgroundColor="#388E3C" 
+                             Grid.Row="2" Grid.Column="1"  Clicked="BtnBecas_Clicked">
+
+                <ImageButton.Source>
+
+                    <UriImageSource Uri="https://i.imgur.com/etzLPh2.png"/>
+
+                </ImageButton.Source>
+
+            </ImageButton>
+
+            <ImageButton x:Name="btnTransporte" BackgroundColor="#2E7D32" 
+                             Grid.Row="3" Grid.Column="0" Clicked="BtnTransporte_Clicked">
+
+                <ImageButton.Source>
+
+                    <UriImageSource Uri="https://i.imgur.com/rHzmSKE.png"/>
+
+                </ImageButton.Source>
+
+            </ImageButton>
+
+            <ImageButton x:Name="btnTuUniversidad" BackgroundColor="#1B5E20" 
+                             Grid.Row="3" Grid.Column="1" Clicked="BtnTuUniversidad_Clicked">
+
+                <ImageButton.Source>
+
+                    <UriImageSource Uri="https://i.imgur.com/zepKnAs.png"/>
+
+                </ImageButton.Source>
+
+            </ImageButton>
+
+            <ImageButton x:Name="btnOferta" BackgroundColor="#4CAF50" 
+                         Grid.Row="1" Grid.Column="1" Clicked="BtnOfertaEducativa_Clicked">
+
+                <ImageButton.Source>
+
+                    <UriImageSource Uri="https://i.imgur.com/R3AoinV.png"/>
+
+                </ImageButton.Source>
+
+            </ImageButton>
+
+        </Grid>
+
+    </ContentPage.Content>
+
+
+</ContentPage>
